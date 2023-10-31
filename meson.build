@@ -121,6 +121,9 @@ lv_drivers_sources = [
 
 lvgl_demo_sources = [
     'libs/lvgl/examples/get_started/lv_example_get_started_1.c',
+    'libs/lvgl/examples/widgets/arc/lv_example_arc_1.c',
+    'libs/lvgl/examples/widgets/meter/lv_example_meter_3.c',
+    'libs/lvgl/examples/assets/img_hand.c',
     'src/main.c',
 ]
 

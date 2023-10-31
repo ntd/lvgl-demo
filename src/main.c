@@ -50,7 +50,10 @@ main(int argc, char **argv)
 
     pthread_create(&ticker, NULL, tick_thread, NULL);
 
-    lv_example_get_started_1();
+    /* Uncomment one example file */
+    //lv_example_get_started_1();
+    lv_example_arc_1();
+    //lv_example_meter_3();
 
 #if LV_WAYLAND_TIMER_HANDLER
     struct pollfd pfd;
