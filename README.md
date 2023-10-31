@@ -1,6 +1,11 @@
 LVGL demo
 =========
 
+A demo based on LVGL 8.3 on wayland. There are still some issues that
+I don't know how to address, specifically a stream of errors when
+closing the application.
+
+
 Update git submodules and build using meson:
 ```
 git submodule init
