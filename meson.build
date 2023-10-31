@@ -125,6 +125,7 @@ lvgl_demo_sources = [
 ]
 
 lvgl_demo_deps = [
+    dependency('threads'),
     dependency('wayland-client'),
     dependency('wayland-cursor'),
     dependency('xkbcommon'),
