@@ -3,6 +3,10 @@
 
 #include <unistd.h>
 
+#define HSIZE   480
+#define VSIZE   320
+#define TITLE   "LVGL demo"
+
 
 int
 main(int argc, char **argv)
@@ -15,8 +19,7 @@ main(int argc, char **argv)
     lv_init();
     lv_wayland_init();
 
-    disp = lv_wayland_create_window(WAYLAND_HOR_RES, WAYLAND_VER_RES,
-                                    WAYLAND_SURF_TITLE, NULL);
+    disp = lv_wayland_create_window(HSIZE, VSIZE, TITLE, NULL);
     LV_UNUSED(disp);
 
     lv_example_get_started_1();

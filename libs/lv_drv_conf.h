@@ -178,12 +178,6 @@
 #endif
 
 #if USE_WAYLAND
-#  define WAYLAND_HOR_RES      480
-#  define WAYLAND_VER_RES      320
-#  define WAYLAND_SURF_TITLE   "LVGL"
-#endif
-
-#if USE_WAYLAND
 /* Support for client-side decorations */
 #  ifndef LV_WAYLAND_CLIENT_SIDE_DECORATIONS
 #    define LV_WAYLAND_CLIENT_SIDE_DECORATIONS 1
