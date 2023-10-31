@@ -19,6 +19,9 @@
 
 #include <stdint.h>
 
+#define LV_HOR_RES   480
+#define LV_VER_RES   320
+
 /*====================
    COLOR SETTINGS
  *====================*/

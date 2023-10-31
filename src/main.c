@@ -8,10 +8,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define HSIZE   480
-#define VSIZE   320
-#define TITLE   "LVGL demo"
-
 static bool loop = true;
 
 
@@ -46,7 +42,8 @@ main(int argc, char **argv)
     lv_init();
     lv_wayland_init();
 
-    disp = lv_wayland_create_window(HSIZE, VSIZE, TITLE, on_close);
+    disp = lv_wayland_create_window(LV_HOR_RES, LV_VER_RES,
+                                    "LVGL demo", on_close);
 
     pthread_create(&ticker, NULL, tick_thread, NULL);
 
